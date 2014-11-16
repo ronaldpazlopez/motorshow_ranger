@@ -1,0 +1,836 @@
+@font-face {
+	font-family: 'Conv_FordAntennaCondWGL-Bold';
+	src: url('../fonts/FordAntennaCondWGL-Bold.eot');
+	src: url('../fonts/FordAntennaCondWGL-Bold.woff') format('woff'),
+		 url('../fonts/FordAntennaCondWGL-Bold.ttf') format('truetype'),
+		 url('../fonts/FordAntennaCondWGL-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_FordAntennaCondWGL-Light';
+	src: url('../fonts/FordAntennaCondWGL-Light.eot');
+	src: url('../fonts/FordAntennaCondWGL-Light.woff') format('woff'),
+		 url('../fonts/FordAntennaCondWGL-Light.ttf') format('truetype'),
+		 url('../fonts/FordAntennaCondWGL-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_FordAntennaCondWGL-Reg';
+	src: url('../fonts/FordAntennaCondWGL-Reg.eot');
+	src: url('../fonts/FordAntennaCondWGL-Reg.woff') format('woff'),
+		 url('../fonts/FordAntennaCondWGL-Reg.ttf') format('truetype'),
+		 url('../fonts/FordAntennaCondWGL-Reg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_FordAntennaWGL-Black';
+	src: url('../fonts/FordAntennaWGL-Black.eot');
+	src: url('../fonts/FordAntennaWGL-Black.woff') format('woff'),
+		 url('../fonts/FordAntennaWGL-Black.ttf') format('truetype'),
+		 url('../fonts/FordAntennaWGL-Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.ui-btn-righ{
+	float:right;
+}
+
+
+/*.ui-mobile-viewport*/
+.degradado {  
+background: #e3e3e3; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+/*background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UzZTNlMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY5JSIgc3RvcC1jb2xvcj0iI2VkZTRlMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU0ZTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);*/
+background: -moz-linear-gradient(top, #e3e3e3 10%, #ede4e1 29%, #FFFFFF 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,#e3e3e3), color-stop(49%,#ede4e1), color-stop(100%,#FFFFFF)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #e3e3e3 0%,#ede4e1 29%,#FFFFFF 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #e3e3e3 10%,#ede4e1 29%,#FFFFFF 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #e3e3e3 10%,#ede4e1 29%,#FFFFFF 100%); /* IE10+ */
+background: linear-gradient(to bottom, #e3e3e3 10%,#ede4e1 29%,#FFFFFF 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3e3', endColorstr='#FFFFFF',GradientType=0 ); /* IE6-8 */
+}  
+
+#myPopupDialog{
+	width:780px;
+	
+}
+
+.ui-bar-f{
+	border-radius: 0!important;
+	border-top: 5px solid #4d4d4f;
+	border-top-width: 4px!important;
+	border-bottom: 5px solid #4d4d4f;
+	border-bottom-width: 4px!important;
+	background-color: none;
+	margin: 20px 0;
+}
+.ui-bar-f .ui-title{
+    background-color: #000000;
+	color: #ffffff;	
+	padding: 10px 28px;
+	margin: 3px 0!important;
+	border-radius: 0!important;
+	text-align: left;
+}
+.ui-body-f{
+	background-color: transparent; 
+	min-height: 420px;
+	text-align: center;
+}
+
+.ui-body-f p{
+	font-size: 17px!important;
+ 	
+ 	font-weight: normal;
+ 	color: #333;
+ 	text-decoration: none!important;
+}
+
+.ui-page-theme-f{
+	font-weight:bold;
+	/*background-color:#ffffff;*/
+	/*background-image:url(../img/bg-neutrogena.jpg);*/
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 600px;
+	font-weight: normal;
+}
+
+.ui-dialog-contain{
+	max-width: 900px;
+}
+.ui-bar-g{
+	border: 0!important;
+}
+.ui-bar-g .ui-btn-inline{
+	margin: 0 auto!important;
+	border: 0!important;
+	/*background-color: #f1a562;*/
+	color: #ffffff;
+	display: block;
+	padding: 12px 15px; 
+	width: 220px;
+	text-shadow: none;
+	background-image: none;
+	font-size: 15px;
+	border-radius: 0!important;
+}
+.ui-btn-inline{
+	background-color: transparent; 
+
+  	font-weight: normal;
+  	font-weight: normal;
+  	text-shadow: 1px 1px 1px #efa35f;
+}
+.ui-bar-g .ui-btn-inline:hover{
+	background-color: #dd7c27;
+	color: #fff;
+	text-shadow: none;
+}
+.ui-header-g.ui-title{
+	margin: 25px 0 0;
+}
+.ui-header-h.ui-title{
+	margin: 55px 0 0;
+	font-size: 58px;
+  	font-weight: normal;
+}
+.ui-header-i.ui-title{
+	margin: 15px 0 0;
+	padding: 10px 0 0;
+	font-size: 58px;
+  	font-weight: normal;
+}
+.ui-text-i{
+	font-size: 16px!important;
+	margin: 0 0 32px 0;
+	padding: 0;
+
+}
+.ui-title-question{
+	max-width: 620px;
+	padding: 15px;
+	margin: 0 auto;
+	background: #dbdbdb;
+	margin: 10px auto;
+	font-size: 19px!important;
+	text-align: left;
+	font-weight: normal!important;
+	color: #999999;
+ 	font-weight: normal;
+}
+.ui-btn-inline{
+	margin: 0;
+	padding: 15px 20px;
+	font-size: 25px;
+	color: #efa35f;
+	background-image: url(../img/bg-btn.png); 
+	border: 1px solid #fdfdfd;
+	-webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    3px 3px 5px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         3px 3px 5px 0px rgba(50, 50, 50, 0.5);
+}
+.ui-btn-inline:hover{
+}
+.ui-btn-inline img{
+	margin: 0 0 0 12px
+}
+.ui-popup{
+	background-color: #fff;
+	font-weight: normal;
+}
+p.minor-font{
+	font-size: 23px!important;
+
+  	font-weight: normal;
+  	line-height: 0.94em;
+}
+p.paragraph-init{
+	font-size: 30px!important;
+
+  	font-weight: normal;
+  	line-height: 0.94em;
+}
+p.paragraph-init strong{
+
+  	font-weight: normal;
+	font-size:22px;
+}
+
+.ui-grid-c{
+	margin: 0 0 0px 0;
+	
+}
+.ui-block-a{
+	text-align: right;
+}
+.ui-block-a img{
+	margin: 0px 10px 0 0;
+	
+}
+.ui-block-b{
+	text-align: left;
+}
+
+.cont-catalogo{
+
+	font-size:13px;
+	width:330px;
+	text-align: left;
+	float:right;
+}
+
+.top-ready{
+	margin: 20px 0 100px 0;
+	font-size: 40px;
+	color: #c1c1c1;
+
+  	font-weight: normal;
+}
+.ui-controlgroup-controls{
+	width: 100%!important;
+}
+.ui-field-contain{
+	max-width: 647px!important;
+	margin: 0 auto 10px;
+}
+.ui-checkbox-off:after, .ui-btn.ui-radio-off:after{
+	display: none;
+}
+.ui-radio .ui-btn.ui-radio-on:after{
+	display: none;
+}
+.ui-radio-off{
+	background-color:#efefef;
+	padding: 15px;
+	border-radius: 0!important;
+	border: 0px!important;
+	color: #999999;
+	font-weight: normal!important;
+	font-size: 17px!important;
+}
+.ui-radio-on{
+	background-color:#f0a460;
+	padding: 15px;
+	border-radius: 0!important;
+	border: 0px!important;
+	color: #ffffff;
+	font-weight: normal!important;
+	font-size: 17px!important;
+}
+.ui-fieldcontent-a{
+	width: 146px!important;
+	margin: 0 auto 20px;
+}
+.ui-fieldlabel-a{
+	padding: 10px 15px;
+	width: 116px!important;
+	text-align: center!important;
+
+ 	font-weight: normal;
+}
+.ui-title-question-a{
+	padding: 10px 15px;
+	width: 116px!important;
+	text-align: center!important;
+
+ 	font-weight: normal;
+}
+
+.ui-popup{
+	box-shadow: none!important;
+}
+label.error {
+	float: left;
+	color: #003066;
+	padding-left: .5em;
+	padding-top: .5em;
+	vertical-align: top;
+	font-weight:bold;
+	font-size:12px
+}
+.ui-popup-container{
+	max-width: 800px!important;
+	margin: 0 auto!important;
+	border: 1px solid #c4c4c4!important;
+	border-radius: 0px!important;
+	background: #ffffff!important;
+}
+.ui-popup.ui-body-inherit{
+	border: 0!important;
+	border-radius: 0!important;
+	background: #ffffff!important;
+}
+.minus-top{
+	position: relative;
+	top: -110px;
+}
+a{
+	border: 0!important;
+}
+
+/* MOTORSHOW */
+.clear {
+	clear:both;
+	height:1px;
+	margin:0;
+	padding:0;
+	font-size: 1px;
+	line-height: 0;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.right { text-align: right; }
+.left { text-align: left; }
+.fleft { float: left; }
+.fright { float: right; }
+
+.no_padding { padding: 0 !important; }
+body {
+	font-family: "Conv_FordAntennaCondWGL-Reg";
+	font-size: 12px;
+	color: #fff;
+	margin-top:12px;
+	background:url(../img/m_bg.jpg) no-repeat center top;
+	background-size: 100% 100%;
+	background-position: 0 18px; 
+}
+
+.main-menu {
+	background:url(../img/m-bg-menu.png) no-repeat center top;
+	width: 100%;
+	min-height: 760px;
+	text-align: center;
+	position: relative;
+}
+
+.w-menu {
+	top: 140px;
+	position: relative;
+	width: 684px;
+	margin: 0 auto;
+	left: 14px;
+	min-height: 300px;
+}
+
+.w-menu a.item-menu  {
+	font-size: 26px;
+	color: #003066;
+	font-family: 'Conv_FordAntennaWGL-Black';
+	text-transform: uppercase;
+	text-decoration: none;
+	position: absolute;
+	display: none;
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+}
+
+.w-menu a.menu-1 {
+	top: 0;
+	left: 256px;
+	display: block;
+}
+
+.w-menu a.menu-2 {
+	top: 82px;
+	right: 84px;
+	display: block;
+}
+
+.w-menu a.menu-3 {
+	top: 186px;
+	right: 28px;
+	display: block;
+}
+
+.w-menu a.menu-4 {
+	top: 294px;
+	right: 15px;
+	display: block;
+}
+
+.w-menu a.menu-5 {
+	top: 399px;
+	right: 39px;
+	display: block;
+}
+
+.w-menu a.menu-6 {
+	top: 399px;
+	left: 11px;
+	display: block;
+}
+
+.w-menu a.menu-7 {
+	top: 186px;
+	left: 1px;
+	display: block;
+}
+
+.w-menu a.menu-8 {
+	top: 294px;
+	left: -13px;
+	display: block;
+}
+
+.w-menu a.menu-9 {
+	top: 62px;
+	left: 71px;
+	display: block;
+}
+
+h1 {
+	position: absolute;
+	top: 198px;
+	left: 209px;
+}
+
+.inner_page {
+	padding: 41px 1% 41px 4.7%;
+	position: relative;
+}
+
+.inner_page_intro {
+	position: relative;
+	/* background: #f00; */
+	/* overflow: hidden; */
+}
+
+.left_page {
+	float: left;
+	/* background: #0f0; */
+	width: 62%;
+}
+
+.right_page {
+	float: right;
+	min-height: 300px;
+	/* background: #0f0; */
+	width: 36%;
+}
+
+.bg_photo {
+	background: rgba(255, 255, 255, 0.6);
+	padding: 16px 16px 16px;
+}
+
+.bg_photo img {
+	width: 100%;
+}
+
+.title_page,
+.subtitle_page {
+	margin: 0;
+	color: #003066;
+}
+
+.title_page {
+	margin: 0;
+	color: #003066;
+	font-family: 'Conv_FordAntennaWGL-Black';
+	font-size: 34px;
+	padding-left: 18px;
+	display: none;
+}
+
+.subtitle_page {
+	font-size: 48px;
+	font-family: 'Conv_FordAntennaCondWGL-Reg';
+	text-transform: uppercase;
+	margin-bottom: 13px;
+}
+
+.subtitle_page span {
+	font-family: 'Conv_FordAntennaWGL-Black';
+}
+
+.right_page ul.ui-listview li {
+	background: rgba(0, 0, 0, 0.3);
+	padding: 14px 14px 15px;
+	margin-top: 5px;
+}
+
+.right_page ul.ui-listview li:first-child {
+	margin: 0;
+}
+
+.right_page ul.ui-listview li h2 {
+	color: #003066;
+	font-family: 'Conv_FordAntennaCondWGL-Bold';
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 1em;
+	white-space: normal;
+	font-weight: 300;
+}
+
+.right_page .right_page-in {
+	padding-top: 136px;
+	padding-top: 91px;
+}
+
+
+
+/* .page_ranger .right_page ul.ui-listview {
+	padding-top: 76px;
+}
+
+.page_explorer .right_page ul.ui-listview,
+.page_focus .right_page ul.ui-listview {
+	padding-top: 0;
+}
+
+.page_ecosport .right_page ul.ui-listview,
+.page_fiesta .right_page ul.ui-listview {
+	padding-top: 137px;
+} */
+
+.view_more {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-family: 'Conv_FordAntennaWGL-Black';
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	background:url(../img/bg-btn-view.png) repeat-x left top;
+	width: 107px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.w-menu a.formulario {
+	background:url(../img/bg-btn-view.png) repeat-x left top;
+	width: 140px;
+	height: 26px;
+	line-height: 26px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-family: 'Conv_FordAntennaWGL-Black';
+	color: #fff;
+	display: block;
+	position: absolute;
+	top: 518px;
+	left: 50%;
+	margin-left: -80px;
+}
+
+.ui-header .title_form {
+	color: #003066;
+	font-weight: 300;
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-top: 110px;
+	padding-bottom: 0;
+}
+
+.ui-header .title_form span {
+	font-family: 'Conv_FordAntennaWGL-Black';
+}
+
+#registrate {
+	/* left: 50%;
+	top: 50%;
+	width: 50%;
+	margin-left: -25% 0 0 -25%; */
+	/* max-width: 904px;
+	margin: 0 auto;
+	width: auto; */
+}
+
+.wc_registrate {
+	max-width: 570px;
+	margin: 0 auto;
+}
+
+.wc-content-form {
+	background: rgba(0, 0, 0, 0.3);
+	padding: 35px 5% 30px;
+}
+
+label.left-label{
+	width: 120px;
+	text-align: left;
+	padding: 9px 10px;
+	float: left;
+ 	text-transform: uppercase;
+ 	font-size: 19px;
+ 	margin: 0;
+ 	color: #fff;
+}
+
+input.right-input{
+	width: 100%;
+	text-align: left;
+	padding: 7px 9px;
+	background-color: #efefef;
+	border-radius: 0;
+ 	font-weight: normal;
+ 	color: #999;
+ 	font-size: 19px;
+ 	min-height: unset;
+ 	height: 35px;
+
+}
+.ui-input-text{
+	border: 0;
+	width: 250px;
+	float: left;
+	margin: 0;
+}
+
+.ui-select .ui-btn select {
+	opacity: 1;
+	border-radius: 0;
+	border: 0;
+	color: #999;
+	background: #EFEFEF;
+	font-size: 19px;
+	height: 35px;
+	min-height: unset;
+	position: static;
+}
+
+.ui-btn-corner-all, .ui-btn.ui-corner-all, .ui-slider-track.ui-corner-all, .ui-flipswitch.ui-corner-all, .ui-li-count {
+	border-radius: 0;
+}
+
+.ui-btn, label.ui-btn {
+	border: 0;
+	box-shadow: none;
+}
+
+.container-form-select span {
+	display: none !important;
+}
+
+.ui-shadow-inset {
+	box-shadow: none;
+}
+
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after,
+.ui-icon-carat-d:after {
+	background: none;
+}
+
+.ui-btn-icon-right {
+	padding: 0;
+}
+
+.container-form-select .left-label {
+	line-height: 1em;
+}
+
+.wc-content-form .difference-button {
+	background: rgba(0, 0, 0, 0.3);
+	display: inline-block;
+	color: #fff;
+	text-shadow: none;
+	font-family: 'Conv_FordAntennaCondWGL-Bold';
+	font-size: 15px;
+	padding: 0;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin-right: 2px;
+}
+
+.ui-field-contain>label~[class*=ui-], .ui-field-contain .ui-controlgroup-controls{
+	width: 72%;
+}
+
+.btn_return {
+	display: inline-block;
+	background:url(../img/m-btn-return.png) no-repeat left top;
+	width: 56px;
+	height: 53px;
+}
+
+.wc_registrate .btn_return {
+	margin: 15px 0 0 0;
+}
+
+.wc-return { overflow: hidden; padding-top: 15px; }
+.wc-return .btn_return { margin-left: 16px; }
+
+.view_more_next {
+	margin-right: 10px;
+	width: 122px;
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 56px;
+	height: 53px;
+	margin: 0;
+	background:url(../img/m-btn-next.png) no-repeat left top;
+}
+h1.logo_page {
+	left: auto;
+	top: auto;
+	bottom: -60px;
+	right: 40px;
+	margin: 0;
+
+	position: static;
+	display: inline-block;
+}
+
+.wc_logo_page {
+	padding: 60px 40px 0 0;
+}
+.wc_lightbox {
+	position: fixed;
+	z-index: -1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	transition: opacity .4s ease;
+}
+
+.wc_lightbox.open {
+	z-index: 1000;
+	opacity: 1;
+}
+
+.wc_lightbox_td {
+	width: inherit;
+	height: inherit;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.wc_lightbox_td img {
+	width: auto;
+}
+
+/* .wc_lightbox_td .h_pdf img {
+	width: auto;
+} */
+
+.wc-image.h_pdf {
+	height: 2048px;
+	overflow: auto;
+}
+
+.ui-mobile .ui-page-active {
+	/* overflow-y: hidden; */
+}
+
+.close_zoom {
+	background: #fff;
+	width: 120px;
+	height: 30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+/*
+@media (max-width: 2048px) {
+	.right_page ul.ui-listview {
+		height: 534px;
+		overflow: auto;
+	}
+}
+
+@media (max-width: 1536px) {
+  
+}
+
+@media (max-width: 1024px) {
+  	.right_page ul.ui-listview {
+		height: 366px;
+	}
+}
+
+@media (max-width: 768px) {
+	.right_page ul.ui-listview {
+		height: 273px;
+	}
+
+	.subtitle_page {
+		font-size: 45px;
+	}
+
+	#fiesta-sedan .subtitle_page,
+	#focus-sedan .subtitle_page {
+		font-size: 37px;
+	}
+	
+	.right_page .right_page-in {
+		padding-top: 132px;
+	}
+
+	#fiesta-sedan .right_page .right_page-in,
+	#focus-sedan .right_page .right_page-in {
+		padding-top: 121px;
+	}
+}*/

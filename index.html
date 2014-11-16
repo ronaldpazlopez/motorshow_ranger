@@ -1,0 +1,128 @@
+<html manifest="cache.manifest">
+<head>
+	<title>
+		Motorshow Ranger
+	</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="css/estilos.css" />
+	
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.2.min.js"></script>
+	
+	<script src="js/jquery-validate/jquery.validate.min.js"></script>
+	<script src="js/jquery-validate/additional-methods.min.js"></script>
+	<script src="js/jquery-validate/messages_es.js"></script>
+</head>
+ 
+<body>
+	<div id="wc_lightbox" class="wc_lightbox">
+		<span id="close" class="close_zoom">Cerrar</span>
+		<div class="wc_lightbox_td" id="wc_lightbox_td">
+			<div class="wc-image" id="wc-image">
+				<img id="full_image" alt="" src="img/blank.gif">
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" data-theme="f" id="ranger" class="page_ranger">
+		<div class="inner_page">
+			<div class="inner_page_intro clearfix">
+					<div class="left_page">
+						<h2 class="title_page">PICK-UPs</h2>
+						<div class="bg_photo">
+							<h3 class="subtitle_page">FORD <span>rAnger</span></h3>
+							<a href="img/m-car-ford.jpg" class="lightbox"><img src="img/m-car-ford.jpg" alt=""></a>
+						</div>
+						<div class="right wc-return">
+							<a href="img/image-pdf/image-fusion.jpg" class="lightbox lightbox_pdf view_more fright">ver m&aacute;s</a>
+						</div>
+					</div>
+					<div class="right_page">
+						<div class="right_page-in">
+							<ul class="ui-listview">
+								<li>
+									<h2>Ford</h2>
+									<div class="desc">Sistema de comunicación y entretenimiento activado por comandos de voz.</div>
+								</li>
+								<li>
+									<h2>Hill Start Assist</h2>
+									<div class="desc">Ejerce una presión de 2 segundos mientras el pie pasa del freno hacia el acelerador, evitando que el vehículo se mueva hacia atrás en las pendientes.</div>
+								</li>
+								<li>
+									<h2>Cámara DE reversa</h2>
+									<div class="desc">Una cámara se activa cuando el auto está en reversa, en el espejo retrovisor. </div>
+								</li>
+								<li>
+									<h2>Control de temperatura</h2>
+									<div class="desc">Climatizador automático que cuenta con comandos digitales y regulación con comandos de voz. (Versión LTD 4x4 diesel) </div>
+								</li>
+								<li>
+									<h2>Control ElEctrÓNIco de Estabilidad (ESC) </h2>
+									<div class="desc">Sistema que le asegura el control del auto al conductor, utilizando sensores que detectan situaciones de riesgo, para controlarlas mediante el sistema de frenos. En situaciones extremas, disminuye la potencia del motor.</div>
+								</li>
+								<li>
+									<h2>Control de Tracción (TCS)</h2>
+									<div class="desc">Los sensores ABS aseguran la tracción del vehículo evitando que gire libremente para que el conductor no pierda el control en ningún momento. En casos de patinar, bloquea la rueda que perdió adherencia devolviéndole el control al conductor.</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+			</div>
+			<div class="right wc_logo_page">
+			<h1 class="logo_page"><a href="#home"><img src="img/m-logo.png" alt="For go Further"  width="125" height="71"></a></h1>
+			</div>
+		</div>
+	</div>
+
+<script src="js/bootstrap.js"></script>
+<script src="js/model.js"></script>
+<script type="text/javascript">
+
+	// codigo para motorshow
+	function updateSizeLightbox () {
+		$('#wc_lightbox').width($(window).width());
+		$('#wc_lightbox').height($(window).height());
+	}
+	// end codigo motorshow
+
+	$(function() {
+		// codigo para motorshow
+		var src = "",
+			$wc_lightbox = $('#wc_lightbox'),
+			$full_image = $('#full_image');
+			$close = $('#close');
+
+		updateSizeLightbox();
+		$(window).resize(function() {
+			updateSizeLightbox();
+		});
+
+		$('.lightbox').click(function(e) {
+			src = $(this).attr('href');
+			$full_image.attr('src',src);
+			$wc_lightbox.addClass('open');
+			e.preventDefault();
+		});
+
+		$('.lightbox_pdf').click(function(e) {
+			$('#wc-image').addClass('h_pdf');
+			$('#wc-image').height($(window).height() - 90);
+			e.preventDefault();
+		});
+
+		$close.click(function() {
+			$wc_lightbox.removeClass('open');
+			$('#wc-image').removeClass('h_pdf');
+			$('#wc-image').css('height','auto');
+		})
+		// end codigo motorshow
+		
+	});
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<widget id="com.motorshow2014" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
+    <name>Motorshow Ranger</name>
+	<description>Evento Motorshow 2014 Perú</description>
+	
+	<icon src="img/m-logo.png" gap:platform="ios" width="152" height="152" />
+	
+	<gap:platform name="ios" />
+	
+	<preference name="fullscreen" value="false" />
+	<preference name="target-device" value="universal" />
+	<preference name="prerendered-icon" value="true" />
+	<preference name="ios-statusbarstyle" value="black-opaque" />
+	<preference name="detect-data-types" value="false" />
+	<preference name="exit-on-suspend" value="false" />
+	<preference name="webviewbounce" value="false" />
+	<preference name="stay-in-webview" value="false" />
+	<preference name="show-splash-screen-spinner" value="false" />
+	<preference name="auto-hide-splash-screen" value="true" />
+	<preference name="EnableViewportScale" value="true" />
+	<preference name="orientation" value="landscape" />
+	
+	<access origin="*" subdomains="true" />
+</widget>

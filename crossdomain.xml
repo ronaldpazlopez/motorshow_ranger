@@ -1,0 +1,10 @@
+<?xml version="1.0"?> 
+<cross-domain-policy> 
+<site-control permitted-cross-domain-policies="master-only"/>
+   <allow-access-from domain="*"/>
+   <allow-http-request-headers-from domain="*" headers="*" secure="true" />  
+   
+  <!--  <allow-access-from domain="*" to-ports="*" secure="true" /> 
+ This domain can accept any header from a SWF file on any subdomain of example.com and supports https requests  
+  -->    
+</cross-domain-policy>
