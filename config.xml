@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<widget id="com.motorshow2014" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
-    <name>Motorshow Ranger</name>
+<widget id="com.motorshow2014.ranger" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
+    <name>Ranger</name>
 	<description>Evento Motorshow 2014 Perú</description>
 	
 	<icon src="img/m-logo.png" gap:platform="ios" width="152" height="152" />

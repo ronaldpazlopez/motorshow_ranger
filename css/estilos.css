@@ -542,6 +542,7 @@ h1 {
 	/*padding-top: 136px;*/
 	padding-top: 88px;
     line-height:1.1em;
+	text-align:justify;
 	
 }
 
@@ -722,7 +723,7 @@ input.right-input{
 	background:url(../img/m-btn-return.png) no-repeat left top;
 	width: 56px;
 	height: 53px;
-	margin-top:20px;
+	margin-top:0px;
 }
 
 .wc_registrate .btn_return {
