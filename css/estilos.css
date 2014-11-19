@@ -9,6 +9,17 @@
 }
 
 @font-face {
+	font-family: 'Conv_antenna-light';
+	src: url('../fonts/antenna-light.eot');
+	src: url('../fonts/antenna-light.woff') format('woff'),
+		 url('../fonts/antenna-light.ttf') format('truetype'),
+		 url('../fonts/antenna-light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
 	font-family: 'Conv_FordAntennaCondWGL-Light';
 	src: url('../fonts/FordAntennaCondWGL-Light.eot');
 	src: url('../fonts/FordAntennaCondWGL-Light.woff') format('woff'),
@@ -342,6 +353,7 @@ a{
 body {
 	font-family: "Conv_FordAntennaCondWGL-Reg";
 	font-size: 12px;
+	
 	color: #fff;
 	margin-top:12px;
 	background:url(../img/m_bg.jpg) no-repeat center top;
@@ -488,8 +500,9 @@ h1 {
 }
 
 .subtitle_page {
-	font-size: 48px;
-	font-family: 'Conv_FordAntennaCondWGL-Reg';
+	font-size: 45px;
+	font-family: 'Conv_antenna-light';
+	
 	text-transform: uppercase;
 	margin-bottom: 13px;
 }
@@ -500,13 +513,14 @@ h1 {
 
 .right_page ul.ui-listview li {
 	background: rgba(0, 0, 0, 0.3);
-	padding: 14px 14px 15px;
+	padding: 11px 14px 11px;
 	margin-top: 5px;
 }
 
 .right_page ul.ui-listview {
-		height: 534px;
+		height: 341px;
 		overflow: auto;
+		
 }
 
 .right_page ul.ui-listview li:first-child {
@@ -525,8 +539,10 @@ h1 {
 }
 
 .right_page .right_page-in {
-	padding-top: 136px;
-	padding-top: 91px;
+	/*padding-top: 136px;*/
+	padding-top: 88px;
+    line-height:1.1em;
+	
 }
 
 
@@ -706,10 +722,12 @@ input.right-input{
 	background:url(../img/m-btn-return.png) no-repeat left top;
 	width: 56px;
 	height: 53px;
+	margin-top:20px;
 }
 
 .wc_registrate .btn_return {
 	margin: 15px 0 0 0;
+	
 }
 
 .wc-return { overflow: hidden; padding-top: 15px; }
@@ -718,7 +736,7 @@ input.right-input{
 .view_more_next {
 	margin-right: 10px;
 	width: 122px;
-
+   
 	position: absolute;
 	bottom: 0;
 	right: 0;
