@@ -504,6 +504,11 @@ h1 {
 	margin-top: 5px;
 }
 
+.right_page ul.ui-listview {
+		height: 534px;
+		overflow: auto;
+}
+
 .right_page ul.ui-listview li:first-child {
 	margin: 0;
 }
