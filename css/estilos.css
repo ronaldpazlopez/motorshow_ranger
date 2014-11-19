@@ -10,13 +10,14 @@
 
 @font-face {
 	font-family: 'Conv_antenna-light';
-	src: url('../fonts/antenna-light.eot');
-	src: url('../fonts/antenna-light.woff') format('woff'),
-		 url('../fonts/antenna-light.ttf') format('truetype'),
-		 url('../fonts/antenna-light.svg') format('svg');
+	src: url('../fonts/antenna-regular.eot');
+	src: url('../fonts/antenna-regular.woff') format('woff'),
+		 url('../fonts/antenna-regular.ttf') format('truetype'),
+		 url('../fonts/antenna-regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
+
 
 
 @font-face {
